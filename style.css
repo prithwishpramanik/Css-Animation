@@ -1,20 +1,23 @@
 *{
 	margin: 0px;
-	padding: 0px
+	padding: 0px;
+	font-family: 'Rowdies', cursive;
+
 }
+
+
 
 
 
 .nav{
 	height: 50px;
-	border-bottom: 1px black solid;
-	position: sticky;
-}
+    border-bottom: 4px #8e6060 solid;
+    position: sticky;}
 
 .nav span{
-	font-size: 50px;
-	margin-left:25px;
-	font-weight: bolder;
+	font-size: 45px;
+    margin-left: 25px;
+    font-weight: bolder;
 }
 
 .navbar{
@@ -45,7 +48,10 @@ ul li{
 
 ul li:hover{
 
-	color: yellow;
+	color: #FFCA1B;
+		text-shadow: 0px 0px 5px #FFCA1B;
+		cursor: pointer;
+
 }
 
 .container{
@@ -55,20 +61,23 @@ ul li:hover{
     justify-content: center;
     align-items: center;
     background: #b9f;
-    position: relative;
+    position: absolute;
+
+
 }
 
 .product{
-	width: 60%;
-    height: 620px;
+	width:1074px;
+    height: 650px;
     background: #FFF;
     position: absolute;
-    animation: openBox 1s cubic-bezier(.74, .06, .4, .92) forwards;
-    
-}
+
+
+
+    }
 
 .description{
-	    width: 500px;
+	width: 0px;
     height: 430px;
     background: #FFCA1B;
     display: flex;
@@ -78,7 +87,32 @@ ul li:hover{
     left: 0px;
     top: 50px;
     float: left;
+    margin-right: 20%;
     margin-left: 55%;
+    animation: Box 1s forwards;
+    }
+
+    @keyframes Box{
+    	0% {
+    width: 0px;
+    left: 1%;
+  }
+  100% {
+    width: 500px;
+    left: 10%;
+  }
+}
+
+.about{
+	transition: all ease 5s;
+	animation:about ease 5s;
+
+}
+
+@keyframes about {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+} 
 }
 
 .about span{
@@ -88,6 +122,7 @@ ul li:hover{
     text-transform: uppercase;
     display: flex;
     opacity: 0.5;
+
 }
 
 .about p{
@@ -113,14 +148,18 @@ ul li:hover{
 }
 
 .button{
-	width: 850px;
-    height: 200px;
+	width: 500px;
+    height: 100px;
     bottom: 70px;
-    right: -310px;
     position: absolute;
-    margin-top: 10%;
-    margin-right: 140px;
-    top: 300px
+    /* margin-top: 10%; */
+    margin-left: 150px;
+    top: 465px;
+    left: 300px;
+
+
+
+
 }
 
 .wish{
@@ -128,7 +167,7 @@ ul li:hover{
     background: transparent;
     color: #F71568;
     position: absolute;
-    bottom: -2px;
+    bottom: 2px;
     left: 0;
     opacity: 1;
     font-size: 50px;
@@ -136,43 +175,60 @@ ul li:hover{
     width: 240px;
     height: 70px;
     font-weight: bold;
+    }
 
 
 
-}
 .buy{
 	border: none;
     background: #F71568;
     color: #FFF;
     position: absolute;
-    right: 0;
+    right: -207px;
     bottom: 0;
     opacity: 1;
     font-size: 50px;
     font-weight: bold;
     width: 240px;
-    height: 70px;
-}
+    height: 70px
+    }
+
 
 footer{
-	width: 350px;
+	    width: 350px;
     height: 80px;
     background: #FFCA1B;
     position: absolute;
-    right: 0;
-    bottom: -80px;
+    right: 11px;
+    bottom: -127px;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 500px;
+    left: 364px;
 
 }
+
+
+
 
 a{
 	
 	font-size:20px;
-	color: white
+	color: white;
+	animation: topAni ease 5s;
 }
+@keyframes topAni {
+  0% {
+    opacity: 0;
+     bottom: -80px
+  }
+  100% {
+    opacity: 1;
+     bottom: 0px
+
+  }
+}
+
 
 .video{
 	display: flex;
@@ -180,7 +236,8 @@ a{
     position: absolute;
     bottom: 180px;
     opacity: 1;
-    margin-left: 25px
+    margin-left: 25px;
+    top:550px;
 
 }
 
@@ -219,6 +276,32 @@ a{
  a:hover{
 	text-shadow: 0 0 30px #F71568;
 }
+img{
+	width: 60%;
+    height: 500px;
+    float: left;
+    margin-right: 90%;
+    animation: fadeIn ease 10s;
+
+}
+
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+} 
+ .video{
+ 	animation: fadeIn ease 5s;
+
+}
+
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+} 
+
+ 
+
+
 
 
 
