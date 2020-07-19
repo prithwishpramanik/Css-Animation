@@ -1,2 +1,2 @@
 # Css-Animation
-<img src="pic/shot.jpg">
+<img src="pic/shot.png">
