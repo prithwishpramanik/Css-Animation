@@ -1,0 +1,156 @@
+*{
+	margin: 0px;
+	padding: 0px
+}
+
+body{
+	height: 1500px
+}
+
+.nav{
+	height: 50px;
+	border-bottom: 1px black solid;
+	position: sticky;
+}
+
+.nav span{
+	font-size: 50px;
+	margin-left:25px;
+	font-weight: bolder;
+}
+
+.navbar{
+	float: right;
+	margin-top: 5px;
+	text-align: center;
+
+}
+
+ul{
+	list-style-type: none;
+}
+
+ul li{
+	display: inline-block;
+	padding: 10px;
+	margin-left: 5px;
+	float: right;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 2px;
+    transition: all 0.2s ease
+
+
+	
+}
+
+ul li:hover{
+
+	color: yellow;
+}
+
+.container{
+	width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b9f;
+    position: relative;
+}
+
+.product{
+	width: 60%;
+    height: 620px;
+    background: #FFF;
+    position: absolute;
+    
+}
+
+.description{
+	    width: 500px;
+    height: 430px;
+    background: #FFCA1B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    float: left;
+    margin-left: 55%;
+}
+
+.about span{
+	font-family: 'Lato';
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    opacity: 0.5;
+}
+
+.about p{
+	margin-top: 35px;
+    font-size: 25px;
+    font-family: 'Poppins';
+
+}
+
+.spec{
+	font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    z-index: 2;
+    margin-left: 15px;
+    font-family: 'Poppins';
+}
+
+.about{
+	margin: 10px;
+	padding: 12px
+}
+
+.button{
+	width: 850px;
+    height: 100px;
+    bottom: 70px;
+    right: -50px;
+    position: fixed;
+    margin-top: 10%;
+    margin-right: 140px;
+}
+
+.wish{
+	  border: 2px solid #F71568;
+    background: transparent;
+    color: #F71568;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    opacity: 1;
+    font-size: 50px;
+    margin-left: 40%;
+    width: 240px;
+    height: 70px;
+
+}
+.buy{
+	border: none;
+    background: #F71568;
+    color: #FFF;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    font-size: 50px;
+    font-weight: bold;
+    width: 240px;
+    height: 70px;
+}
+
+
+
+
